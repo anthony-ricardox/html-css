@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{    
+            display: inline-block;
+            background-color: rgba(105, 105, 105, 0.677);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid black;
+           
+            
+            
+            }   
+            div:hover{  
+                background-color: black;
+            }
+            div > p{    
+                display: none;
+            }
+            div:hover > p{  
+                display: block;
+                
+            }
+            #d1:hover{    
+                background-color: red;
+                 
+            }
+            #d2:hover{
+                background-color: blue;
+            }
+
+        
+            
+    </style>
+</head>
+<body>
+    <div id="d1">01 <p><img src="../desafio-09/imagem/thumb-js.png" alt=""></p></div>
+    <div id="d2">02 <p><img src="../desafio-09/imagem/thumb-hardware.png" alt=""></p></div>
+    <div>03 <p><img src="../desafio-09/imagem/thumb-js.png" alt=""></p></div>
+    <div>04 <p><img src="../desafio-09/imagem/thumb-hardware.png" alt=""></p></div>
+    <div>05 <p><img src="../desafio-005/minha-foto.png" alt=""></p></div>
+</body>
+</html>

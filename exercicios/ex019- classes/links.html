@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+        SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo
+       :: = pseudo-elemento
+        > filho-children 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{  
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+             font-weight: bold;
+        }
+        a:hover{
+           color: rgb(0, 0, 0);
+            text-decoration: underline;
+
+      }
+        a:visited{  
+            color: rgba(204, 66, 66, 0.716);
+        }
+        a:active{   
+            color: rgba(2, 245, 34, 0.675);
+        }
+        .especial::before{  
+            content: '✽';
+
+        }
+        a::after{ 
+            content:'[link]';
+            text-decoration: none;
+            color: rgba(118, 118, 229, 0.89);
+            font-weight: normal;
+            
+        }
+        .especial{  
+            background-color: rgba(103, 103, 230, 0.395);
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul> 
+        <li><a href="https://www.instagram.com/anthonyricardox/" target="_blank"class="especial">Intagram  </a></li>
+
+        <li> <a href=""class="especial">anthony</a> </li>
+      
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'code';
+    src: url('font/cCodetan.ttf')format('opentype');
+
+}
+*{  
+   margin: 0px;
+   padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&family=Henny+Penny&family=Poppins:ital,wght@1,200&family=Teko&display=swap');
+:root{  
+    --cor1:#00ff00;
+    --cor2:#00bfff;
+    --cor3:#ff00ff;
+    --cor4:#00ffff;
+    --cor5:#000000;
+    --cor6:#111111;
+    --font-home:  'Poppins', sans-serif;
+    --font-code: 'code'
+
+}
+
+
+body{   
+    background-color: rgb(0, 0, 0);
+    font-family: var(--font-home);
+}
+
+header{ 
+    background-image: linear-gradient( to top , var(--cor4),var(--cor6));
+    font-family: var(--font-home);
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    font-family: var(--font-code);  
+    font-size: 3em;
+    text-shadow: 2px 2px 1px #00ffff7f;
+    
+    
+}
+header p{   
+    color: rgba(255, 255, 255, 0.721);
+    text-shadow: 1px 1px 5px black;
+}
+nav{
+    padding: 5px;
+    margin-left: 5px;
+    font-weight: normal;
+    
+}
+nav a{  
+    margin-right: 50px;
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+nav a:hover{    
+    background-color: #3c423c;
+    transition-duration: 0.5s;
+    
+}
+nav a:active{   
+    background-color: #00ffff;
+    color: black;
+    transition-duration: .5s;
+}
+
+
+    
+    

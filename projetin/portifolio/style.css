@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&family=Henny+Penny&family=Poppins:ital,wght@1,200&family=Teko&display=swap');
+
+
+@font-face {
+    font-family:'god' ;
+    src: url('font/good.otf')format('opentype');
+  
+}
+
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+:root{  
+    --cor1:#00bfff;
+    --cor2:#1e272e;
+    --cor3:#000000;
+    --cor4:#ffffff;
+
+    --font-dev: 'god';
+    --font-padrao: 'padrao';
+    
+}
+
+body{ background-color:rgb(10, 108, 137) ;
+  
+}
+header{
+     background-image: linear-gradient(to top, var(--cor2), var(--cor3));
+     padding: 20px;
+     height: 100px;
+     text-align: center;
+     
+}
+header h1{  
+    color: var(--cor1);
+    margin-bottom: 15px;
+    font-family: var(--font-dev);
+    text-shadow: 2px 2px 1px #026b8e87;
+}
+header p{   
+    color: rgb(35, 173, 207);
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 1px #073c5e6c;
+    font-weight: bold;
+
+}
+nav{    
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    padding: 5px;
+    text-shadow:2px 2px 1px #04628148
+    
+}
+nav a{  
+    color: #0ea0d1;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right:10px ;
+    
+}
+nav a:hover{    
+    background-color: #7fd6f322;
+    transition-duration: 0.5s;
+}
+nav a:active{    
+    background-color: var(--cor1);
+    color: #000000;
+}
+main{   
+   
+   
+}
+
+
+
+
