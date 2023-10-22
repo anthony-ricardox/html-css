@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans&family=Handlee&family=Henny+Penny&family=JetBrains+Mono:ital@1&family=Nosifer&family=Passion+One:wght@700&family=Poppins:ital,wght@1,200&family=Sriracha&family=Teko&display=swap');
+
+*{  
+   
+    
+}
+
+
+
+body{   
+    background-image: url();
+}
+header{ 
+
+    background-color: black;
+    height: 150px;
+    color: white;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+header h1{  
+    font-family: 'Passione One';
+    font-size: 16mm;
+    font-weight: 700;
+    margin-top: 10px;
+}
+header p{ 
+    font-family: 'Verdana';
+    
+    
+    
+}
+
+main p{ 
+    background-color: white;
+    
+}
+main#joaninha{  
+    background-image:url('imagens/background001.jpg') ;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    height: 97vh;
+}
