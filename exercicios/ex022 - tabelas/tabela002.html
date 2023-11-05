@@ -17,14 +17,49 @@
             border-collapse: collapse;
             margin: auto;
         }
+        table caption{  
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+         #h{   
+            background-color: rgba(0, 0, 0, 0.882);
+            
+        }
         table td, table th{
-            border: 1px solid black; 
+            border: 1px solid rgb(0, 0, 0); 
           
             padding: 10px;
         }
+        table th{ 
+            position: relative;
+            
+        }
+        table  tr  th{    
+            position: sticky;
+            top: 0px;
+        }
+        tbody tr:nth-child(odd){    
+            background-color: aliceblue;
+            color: rgb(4, 0, 255);
+
+        }
+        tbody tr:nth-child(even){    
+            background-color: lightgray;
+
+        }
         th, tfoot{ 
-            background-color: gray;
+            background-color: black;
             color: white;
+        }
+        tfoot td{   
+            color: green;
+        }
+        tfoot{  
+            position: sticky;
+            bottom: 0px;
         }
         .num{   
             text-align: right;
@@ -35,11 +70,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table> 
+        <caption> População das unidades Federativas</caption>
         <thead> 
-            <tr>    
-                <th> Estado</th>
-                <th> População</th>
-
+            <tr >    
+                <th id="h" scope="col" style="width: 200px;"> Estado</th>
+                <th id="h" scope="col" style="width: 50px;"> População</th>
             </tr>
         </thead>
 
@@ -156,8 +191,8 @@
 
         <tfoot> 
             <tr>    
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>8 510 295,914</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td  class="num" ><strong>8 510 295,914</strong></td>
             </tr>
         </tfoot>
     </table>
