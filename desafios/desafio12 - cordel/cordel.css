@@ -6,11 +6,17 @@
     margin: 0px;
     padding: 0px;
 }
+:root{   
+    --comum: Verdana, Geneva, Tahoma, sans-serif;
+    --cordel: 'Passion One';
+    --padrao: 'Sriracha';
 
-html , body{
+}
+
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background-color: rgb(43, 255, 255);
+    background-color: darkgray;
 }
 header{ 
     background-color: black;
@@ -19,13 +25,14 @@ header{
  
 }
 header h1{  
-    font-family: 'Passion One';
+    font-family: var(--cordel);
     padding-top: 50px;
     font-variant: small-caps;
     font-size: 7.5vw;
     
 }
 header p{   
+    font-family: var(--comum);
     padding-bottom: 50px;
     padding-top: 6px;
     font-size: 1.7vw;
@@ -49,36 +56,35 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: 'Sriracha';
+    font-family: var(--padrao);
     font-size: 3vw;
-
+    background-color: white;
 }
 section p{  
     padding-bottom: 2em;
-}
-section.normal{ 
-    background-color: white;
-    color: black;
+    white-space: pre-line;
 
+    display: inline-block;
 }
 section.imagem{ 
     
     background-color: rgb(79, 77, 77) ;
     color: whitesmoke;
-    box-shadow: inset 5px 5px 10px 0px black ;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.808) ;
    
 }
 section.imagem p{   
+    
     padding: 10px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.469);
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     background-size: cover;
 }
 section#imagem1{    
     background-image: url('imagens/background001.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: center center;
     background-attachment: fixed;
     
 }
@@ -94,6 +100,15 @@ footer{
     text-align: center;
     background-color: black;
     padding: 10px;
+    
+}
+footer p{   
+    font-size: 2vw;
+     /* font-size: clamp(0.8rem, 2vw, 1rem); fonte responsiva */
+  /* white-space: normal; permite quebra automática se não couber */
+  /* word-wrap: break-word; evita que estoure a largura */
+    
+
 }
 footer a:hover{ 
     color: rgb(22, 223, 22);
