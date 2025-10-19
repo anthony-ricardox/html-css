@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* MOBILE FIRST */
+
+*{  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size:1em ;
+}
+
+ html{ 
+   
+    height: 100vh;
+}
+
+body{   
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main{   
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 400px;
+    
+    margin: auto;
+    text-align: center;
+    border-radius:10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1{ 
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
+    font-size: 2em;
+}
+
+img{    
+    display: block;
+    margin: auto;
+}
+
+main#phone{ 
+    display: block;
+}
+
+img#tablet{    
+    display: none;
+}
+
+img#impressora{ 
+    display: none;
+
+}
+
+img#tv{ 
+    display: none;
+}
+img#pc{    
+    display: none;
+}
+
+
