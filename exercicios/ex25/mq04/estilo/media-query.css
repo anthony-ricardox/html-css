@@ -1,3 +1,118 @@
 @charset "UTF-8";
 
 /*TODAS AS MIDIAS  */
+
+/* PESQUISE PARA SE ATUALIZAR: TYPICAL DEVICE BREAKPOINTS */
+
+/* 
+    PEQUENAS TELAS: ATÉ 600PX
+CELULAR: DE  600px ATÉ 768PX
+TABLET: DE 768PX ATÉ 992PX
+DESKTOP: DE 992PX ATÉ 1200PX
+    GRANDES TELAS: ACIMA DE 1200PX
+
+*/ 
+
+ @media print{ /* IMPREMSSORA   */
+    *{  
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+
+    main{   
+        border: 1px solid black;
+        width: 90vw;
+    }
+
+    main h1{    
+        color: black;
+         text-shadow: none;
+    }
+    main::after{
+        text-decoration: overline;    
+        content: 'Site criado por : Anthony Ricardo';
+    }
+
+
+     img#phone{ display: none;}
+
+    img#tablet{ display: none;}
+
+    img#impressora{ display: block;}
+
+    img#tv{ display: none;}
+
+    img#pc{  display: none;}
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){       
+            /* TABLET */
+    body{   
+        background: url(../imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+        background-position: left center;
+    }
+    
+    img#phone{ display: none;}
+
+    img#tablet{ display: block;}
+
+    img#impressora{ display: none;}
+
+    img#tv{ display: none;}
+
+    img#pc{  display: none;}
+
+}
+   
+    
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){ 
+              /* DESKTOP  */
+    body{  
+       background: url(../imagens/back-pc.jpg) no-repeat; 
+       background-size: cover; 
+       background-position: center center;   
+    }
+
+    img#phone{ display: none;}
+
+    img#tablet{ display: none;}
+
+    img#impressora{ display: none;}
+
+    img#tv{ display: none;}
+
+    img#pc{  display: block;}
+
+}
+
+ @media screen and (min-width: 1200px){
+            /* GRANDES TELAS */
+
+    body{   
+        background: url(../imagens/back-tv.jpg) no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        
+    }
+
+     img#phone{ display: none;}
+
+    img#tablet{ display: none;}
+
+    img#impressora{ display: none;}
+
+    img#tv{ display: block;}
+
+    img#pc{  display: none;}
+} 
+
+
+
+
+
+
+
+

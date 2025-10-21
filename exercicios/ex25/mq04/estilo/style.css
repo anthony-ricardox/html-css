@@ -43,24 +43,14 @@ img{
     margin: auto;
 }
 
-main#phone{ 
-    display: block;
-}
+main#phone{ display: block;}
 
-img#tablet{    
-    display: none;
-}
+img#tablet{ display: none;}
 
-img#impressora{ 
-    display: none;
+img#impressora{ display: none;}
 
-}
+img#tv{ display: none;}
 
-img#tv{ 
-    display: none;
-}
-img#pc{    
-    display: none;
-}
+img#pc{  display: none;}
 
 
