@@ -50,7 +50,8 @@ header p{
 nav{    
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     padding: 5px;
-    text-shadow:2px 2px 1px #04628148
+    text-shadow:2px 2px 1px #04628148;
+    
     
 }
 nav a{  
@@ -60,6 +61,7 @@ nav a{
     text-decoration: none;
     border-radius: 5px;
     margin-right:10px ;
+   
     
 }
 nav a:hover{    
@@ -69,6 +71,19 @@ nav a:hover{
 nav a:active{    
     background-color: var(--cor1);
     color: #000000;
+}
+#nave{  
+    display: none;
+}
+
+#menu{
+    padding: 5px;
+    color: grey;
+    display: block;
+}
+#menu:hover{    
+    background-color: #011920;
+    cursor: pointer;
 }
 main{   
    
