@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flex-Box</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="estilo/flex.css">
+</head>
+<body  onresize="MenuTamanho()">
+    <header>    
+        <h1>Menu</h1>
+        <div id="menu"> <span class="material-symbols-outlined" onclick="Menuburg()" >menu</span></div>
+
+        <nav id="burgue">   
+            <a href="" id="item">Opção 1</a>
+            <a href="" id="item">Opção 2</a>
+            <a href="" id="item">Opção 3</a>
+            <a href="" id="item">Opção 4</a>
+            <a href="" id="item">Opção 5</a>
+            <a href="" id="item">Opção 6</a>
+        </nav>
+        
+    </header>
+    <main>  
+        <section>
+            <h2> Teste de FlexBox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusantium doloremque numquam dolor placeat sit eaque quidem. At facere, ratione debitis consectetur rem quas illo omnis, doloremque quisquam voluptas autem.
+            Quasi assumenda aperiam reprehenderit molestias optio soluta distinctio architecto voluptates reiciendis aut odit ut adipisci, nostrum ipsam maxime libero cum facilis odio corrupti amet sequi dignissimos blanditiis at. Dolores, cum.
+            Quaerat aliquam maxime mollitia perspiciatis atque perferendis culpa quibusdam odit aut inventore accusamus ab sed illum necessitatibus deserunt suscipit repudiandae ipsa voluptatem vel quo non, impedit ea officiis soluta. Labore.</p>
+        </section>
+    </main>
+
+    <script>
+
+function MenuTamanho(){ 
+    if(window.innerWidth >= 768){   
+        burgue.style.display = 'block'
+    }else{  
+        burgue.style.display = 'none'
+    }
+}
+
+function Menuburg() {
+  
+  const burgue = document.getElementById('burgue'); // ícone
+
+
+  // Alterna visibilidade do ícone (opcional, se quiser trocar ícone)
+  if (burgue.style.display === 'flex') {
+    burgue.style.display = 'none';
+  } else {
+    burgue.style.display = 'flex';
+  }
+}
+</script>
+
+    </body>
+</html>
