@@ -6,12 +6,15 @@
     <title>Menu Flex-Box</title>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
+
     <link rel="stylesheet" href="estilo/flex.css">
+    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width:600px)">
 </head>
 <body  onresize="MenuTamanho()">
     <header>    
         <h1>Menu</h1>
-        <div id="menu"> <span class="material-symbols-outlined" onclick="Menuburg()" >menu</span></div>
+       <span class="material-symbols-outlined" id="menu" onclick="Menuburg()" >menu</span>
+       <span class="material-symbols-outlined" id="close" onclick="Menuburg()" >close</span>
 
         <nav id="burgue">   
             <a href="" id="item">Opção 1</a>
@@ -35,7 +38,7 @@
     <script>
 
 function MenuTamanho(){ 
-    if(window.innerWidth >= 768){   
+    if(window.innerWidth >= 600){   
         burgue.style.display = 'block'
     }else{  
         burgue.style.display = 'none'
@@ -45,16 +48,19 @@ function MenuTamanho(){
 function Menuburg() {
   
   const burgue = document.getElementById('burgue'); // ícone
+  const close = document.getElementById('close');
 
 
   // Alterna visibilidade do ícone (opcional, se quiser trocar ícone)
-  if (burgue.style.display === 'flex') {
+  if (burgue.style.display == 'flex') {
     burgue.style.display = 'none';
+    close.style.display = 'flex';
   } else {
     burgue.style.display = 'flex';
+    close.style.display = 'none';
   }
 }
-</script>
+ </script> 
 
     </body>
 </html>
