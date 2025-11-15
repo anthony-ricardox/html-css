@@ -9,14 +9,22 @@ nav {
 }
 header h1{  
     flex-basis: 50px;
+    font-size: 30px;
 }
 header nav{ 
     width: 80vw;
     text-align: center;
 }
 
+#menu{  
+    display: flex;
+}
 span#close{ 
     display: none;
     cursor: pointer;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+}
+main{   
+   width: 80vw;
+   height: 100%;
 }
