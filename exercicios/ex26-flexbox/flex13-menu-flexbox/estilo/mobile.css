@@ -5,7 +5,7 @@ header, nav {
     flex-flow: column nowrap;
 }
 nav {    
-   display: none;
+  
 }
 header h1{  
     flex-basis: 50px;
@@ -14,6 +14,7 @@ header h1{
 header nav{ 
     width: 80vw;
     text-align: center;
+    display: none;
 }
 
 #menu{  
@@ -28,3 +29,6 @@ main{
    width: 80vw;
    height: 100%;
 }
+
+
+ 
